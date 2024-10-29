@@ -1,0 +1,83 @@
+// Table wrapper
+.affr-table-wrapper--large.wp-block-affr {
+	.affr-table-item {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		background-color: var(--affr-box-bg-color);
+
+		@container (max-width: 880px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.affr-table-item-cthumb {
+		width: 32%;
+		position: relative;
+
+		@container (max-width: 680px) {
+			width: 100%;
+		}
+	}
+
+	.affr-title {
+		font-size: 1.125rem;
+	}
+
+	.affr-table-item-cwide {
+		padding: 25px;
+		display: flex;
+		flex: 1 0 0%;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.affr-table-item-rwide {
+		display: flex;
+		gap: 20px;
+
+		@container (max-width: 600px) {
+			flex-direction: column;
+		}
+	}
+
+	.affr-table-item-rwide--center {
+		align-items: center;
+	}
+
+	.affr-button {
+		width: 100%;
+		max-width: 270px;
+	}
+
+	.affr-table-item-cterms {
+		background: rgba(0, 0, 0, 0.02);
+		padding: 15px 25px;
+		width: 100%;
+	}
+
+	.affr-list {
+		width: 40%;
+
+		@container (max-width: 600px) {
+			width: 100%;
+		}
+	}
+
+	.affr-title {
+		text-align: center;
+		padding: 15px 15px 0;
+	}
+
+	.affr-rating-icons {
+		@container (max-width: 600px) {
+			text-align: center;
+		}
+	}
+
+	.affr-link {
+		@container (max-width: 600px) {
+			margin: 0;
+		}
+	}
+}

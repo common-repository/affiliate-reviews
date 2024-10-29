@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "affreviews/pros-cons",
+  "version": "0.1.1",
+  "title": "Review Positives - Negatives",
+  "category": "affreviews",
+  "icon": "insert-after",
+  "keywords": [
+    "list",
+    "affiliates",
+    "positives",
+    "reviews",
+    "negatives"
+  ],
+  "description": "Display positives and negatives of a review in a list format.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "selectedPost": {
+      "type": "integer",
+      "default": 0
+    },
+    "positivesTitle": {
+      "type": "string",
+      "default": "Positives"
+    },
+    "negativesTitle": {
+      "type": "string",
+      "default": "Negatives"
+    }
+  },
+  "textdomain": "affreviews",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

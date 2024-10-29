@@ -1,0 +1,267 @@
+/*=============================================
+=                  Elements                  =
+=============================================*/
+.wp-block-affr {
+	color: var(--affr-text-color);
+	container-type: inline-size;
+
+	& * {
+		box-sizing: border-box;
+	}
+
+	.affr-button {
+		display: flex;
+		justify-content: center;
+
+		.affr-button-el {
+			display: block;
+			background-color: var(--affr-button-color);
+			font-weight: var(--affr-button-font-weight);
+			color: var(--affr-button-text-color);
+			border-radius: var(--affr-button-radius);
+			padding: var(--affr-button-padding);
+			text-align: center;
+			font-size: var(--affr-button-font-size);
+			text-decoration: none;
+			text-decoration-line: none;
+			transition: opacity 300ms ease-out;
+			max-width: 320px;
+			width: 100%;
+
+			&:hover {
+				opacity: 0.6;
+				text-decoration-line: none;
+				text-decoration-style: none;
+			}
+		}
+	}
+
+	.affr-title {
+		font-size: clamp(1.125rem, 2vw + 1rem, 1.75rem);
+		font-weight: 700;
+		line-height: 1.3;
+	}
+
+	.affr-terms {
+		p {
+			font-size: 0.75rem;
+			opacity: 0.5;
+			margin: 0;
+			line-height: 1.4;
+		}
+	}
+
+	.affr-list {
+		ul {
+			max-width: 400px;
+			margin: 0 auto;
+			padding-left: 0;
+
+			li {
+				display: flex;
+				align-items: flex-start;
+				text-align: left;
+				margin: 2px 0;
+				font-size: 1rem;
+
+				svg {
+					fill: var(--affr-secondary-color);
+					width: 32px;
+					height: 32px;
+					margin-right: 3px;
+					margin-top: -3px;
+					display: block;
+				}
+
+				span {
+					width: calc(100% - 40px);
+					line-height: 1.65;
+				}
+			}
+		}
+
+		&.affr-cons {
+			ul {
+				li {
+					svg {
+						fill: var(--affr-negative);
+					}
+				}
+			}
+		}
+	}
+
+	.affr-rating-icons {
+		svg {
+			fill: var(--affr-rating-color);
+			margin: 0 1.5px;
+		}
+	}
+
+	// Thumb block
+	.affr-thumb {
+		width: 100%;
+		height: 250px;
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		align-items: center;
+
+		img {
+			display: block;
+			height: 100%;
+			max-width: 400px;
+			width: 100%;
+			object-fit: contain;
+		}
+
+		&.affr-thumb--box {
+			background-color: var(--affr-logo-background-color);
+
+			img {
+				max-width: 200px;
+				height: auto;
+				width: auto;
+			}
+		}
+
+		&.affr-thumb--circle {
+			align-items: flex-start;
+
+			@media (max-width: 781px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			.affr-thumb__inner {
+				border-radius: 50%;
+				overflow: hidden;
+				max-width: 200px;
+				aspect-ratio: 1 / 1;
+				background-color: var(--affr-logo-background-color);
+				padding: 15px;
+
+				img {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+
+	.affr-terms {
+		p {
+			font-size: 0.75rem;
+		}
+	}
+
+	.affr-link {
+		margin: 20px 0;
+
+		a {
+			font-size: 1rem;
+			color: var(--affr-link-color);
+			text-decoration: underline;
+			transition: all 300ms ease-out;
+
+			&:hover {
+				text-underline-offset: 0.25em;
+				text-decoration-style: solid;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.affr-bonus {
+		p {
+			font-size: 1.125rem;
+			margin: 0;
+			line-height: 1.6;
+		}
+	}
+
+	.affr-counter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 44px;
+		line-height: 44px;
+		height: 44px;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.2);
+		font-size: 1rem;
+		font-weight: 700;
+		color: #000;
+	}
+
+	.affr-tag {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 8px 10px;
+		text-align: center;
+		background: var(--affr-tag-background-color);
+		color: var(--affr-tag-text-color);
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.affr-rating-icons {
+		white-space: nowrap;
+	}
+
+	.affr-description {
+		font-size: 0.9rem;
+		line-height: 1.6;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.affr-title-sm {
+		font-weight: 700;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 0.8rem;
+		font-size: 0.8rem;
+	}
+
+	.affr-infolist {
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			padding: 5px 15px;
+			align-content: center;
+			align-items: flex-start;
+
+			&:nth-child(odd) {
+				background: rgba(0, 0, 0, 0.02);
+			}
+		}
+
+		&__title {
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			padding-right: 15px;
+			width: 40%;
+			padding-top: 2px;
+		}
+
+		&__value {
+			flex: 1 0 0;
+			font-size: 1rem;
+		}
+	}
+
+	.affr-message {
+		padding: 30px 20px 1px;
+		background-color: #fff;
+	}
+}
+/*=====  End of Elements  ======*/

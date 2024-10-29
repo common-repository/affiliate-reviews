@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 1,
+  "name": "affreviews/grid",
+  "version": "0.1.1",
+  "title": "Reviews Grid",
+  "category": "affreviews",
+  "icon": "grid-view",
+  "keywords": [
+    "grid",
+    "affiliates",
+    "reviews",
+    "list",
+    "columns"
+  ],
+  "description": "Affiliate list in a grid layout with extended settings for various use cases.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "num": {
+      "type": "string",
+      "default": "4"
+    },
+    "maxProsCons": {
+      "type": "string",
+      "default": "10"
+    },
+    "hideProsCons": {
+      "type": "boolean",
+      "default": false
+    },
+    "orderby": {
+      "type": "string",
+      "default": "rating"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "numColumns": {
+      "type": "string",
+      "default": "2"
+    },
+    "counter": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectedPosts": {
+      "type": "array",
+      "default": []
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Check Best Deals"
+    },
+    "reviewLinkText": {
+      "type": "string",
+      "default": "Read Review"
+    }
+  },
+  "textdomain": "affreviews",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

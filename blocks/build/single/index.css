@@ -1,0 +1,9 @@
+.editor-styles-wrapper .wp-block-post-content .affr-button-el {
+	color: var(--affr-button-text-color);
+}
+
+.editor-styles-wrapper .wp-block-post-content .affr-link a {
+	color: var(--affr-link-color);
+}
+
+

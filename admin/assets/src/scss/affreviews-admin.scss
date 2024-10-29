@@ -1,0 +1,88 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.cmb2-col-6 {
+	width: calc(50% - 10px);
+	float: left;
+}
+
+.cmb-type-group .cmb-row.cmb2-col-first {
+	padding-right: 10px;
+}
+
+.cmb-type-group .cmb-row.cmb2-col-last {
+	padding-left: 10px;
+}
+
+.cmb2-wrap {
+	.cmb-repeatable-group {
+		.cmb-th {
+			.cmb2-metabox-description {
+				font-size: 14px;
+				color: #222;
+				padding-bottom: 0 !important;
+			}
+		}
+	}
+}
+
+/**
+ *
+ * Visual Settings
+ *
+ */
+.affr-admin-visual-wrapper {
+	display: flex;
+	background-color: #fff;
+
+	.components-snackbar-list {
+		position: fixed;
+		bottom: 20px;
+	}
+}
+.affr-admin-visual-editor {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+.affr-admin-visual-sidebar {
+	max-width: 420px;
+	flex-basis: 420px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.affr-admin-visual-container {
+	max-width: 1200px;
+	padding: 30px;
+}
+// .affr-panel-row {
+// 	flex-direction: column;
+// 	align-items: flex-start;
+// }
+.affr-panel-row,
+.visual-settings-tab .affr-panel-row {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.affr-admin-label {
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1.4;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	max-width: 100%;
+	z-index: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 8px;
+}
+.affr-admin-save-wrapper {
+	margin-top: 20px;
+}

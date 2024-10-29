@@ -1,0 +1,25 @@
+/**
+ * Positives / Negatives Block
+ */
+.affr-pros-cons.wp-block-affr {
+	background-color: var(--affr-box-bg-color);
+	padding: 25px;
+}
+
+.affr-pros-cons-cwrap {
+	display: flex;
+
+	@container (max-width: 500px) {
+		flex-wrap: wrap;
+		row-gap: 25px;
+	}
+
+	& > div {
+		flex: 1 0 0;
+
+		@container (max-width: 500px) {
+			width: 100%;
+			min-width: 100%;
+		}
+	}
+}

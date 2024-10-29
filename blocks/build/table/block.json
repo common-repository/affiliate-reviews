@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "affreviews/table",
+  "version": "0.1.1",
+  "title": "Reviews Table",
+  "category": "affreviews",
+  "icon": "editor-table",
+  "keywords": [
+    "table",
+    "affiliates",
+    "reviews",
+    "list"
+  ],
+  "description": "Display a list of reviews in a table layout with extended settings.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "num": {
+      "type": "string",
+      "default": "4"
+    },
+    "maxProsCons": {
+      "type": "string",
+      "default": "10"
+    },
+    "orderby": {
+      "type": "string",
+      "default": "rating"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "counter": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectedPosts": {
+      "type": "array",
+      "default": []
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Check Best Deals"
+    },
+    "reviewLinkText": {
+      "type": "string",
+      "default": "Read Review"
+    }
+  },
+  "textdomain": "affreviews",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
